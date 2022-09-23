@@ -1,0 +1,11 @@
+﻿Console.Clear();
+Console.WriteLine ("введите координату Х первой точки");
+double x1 = double.Parse(Console.ReadLine());
+Console.WriteLine ("введите координату Y первой точки");
+double y1 = double.Parse(Console.ReadLine());
+Console.WriteLine ("введите координату Х второй точки");
+double x2 = double.Parse(Console.ReadLine());
+Console.WriteLine ("введите координату Y второй точки");
+double y2 = double.Parse(Console.ReadLine());
+double lenght = Math.Pow((Math.Pow((x1-x2),2)+Math.Pow((y1-y2),2)),0.5);
+Console.WriteLine (lenght);
