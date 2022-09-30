@@ -9,4 +9,3 @@ for ( int i = 0; i<=array.Length-1; i++)
 PrintArray(array);
 
 
-array

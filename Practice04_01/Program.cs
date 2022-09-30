@@ -2,6 +2,8 @@
 Console.Write("Введите длину массива");
 int arrayLenght = int.Parse(Console.ReadLine());
 
+    Random randGenerator = new Random();
+    int[] array  = new int[arrayLenght];
 
 FillArray(array);
 PrintArray(array);
@@ -9,9 +11,8 @@ PrintArray(array);
 
 void FillArray (int[] array)
 {
-    Random randGenerator = naw Random();
-    int [] array  = new int[arrayLenght];
-    for i (int i = 0; i < array.Lenght; i++)
+
+    for (int i = 0; i < array.Lenght; i++)
     {
         array[i] =  randGenertor.Next(0,2);
     }
