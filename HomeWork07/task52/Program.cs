@@ -65,12 +65,14 @@ void Print1DArray(double[] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
         result = string.Format("{0:f1}", array[i]);
-        if (i<array.GetLength(0)-1)
+        if (i < array.GetLength(0) - 1)
         {
             Console.Write(result + "; ");
         }
         else
+        {
             Console.Write(result + ".");
+        }
     }
     Console.WriteLine();
 }
