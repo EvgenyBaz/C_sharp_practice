@@ -14,7 +14,7 @@ int n = int.Parse(Console.ReadLine());
 int[,] array = new int[m, n];
 FillArray(array);
 Print2DArray(array);
-Console.WriteLine("Среднее арифметическое столбцов:");
+Console.WriteLine("Среднее арифметическое каждого из столбцов:");
 Print1DArray(ArrayColunmAverage(array));
 
 void FillArray(int[,] array)
@@ -65,7 +65,12 @@ void Print1DArray(double[] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
         result = string.Format("{0:f1}", array[i]);
-        Console.Write(result + " ");
+        if (i<array.GetLength(0)-1)
+        {
+            Console.Write(result + "; ");
+        }
+        else
+            Console.Write(result + ".");
     }
     Console.WriteLine();
 }
