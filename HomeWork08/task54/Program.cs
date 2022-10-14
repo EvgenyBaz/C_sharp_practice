@@ -47,7 +47,7 @@ void PrintArray(int[,] array)
 void ArraySortRowToMin (int[,] array)
 {
     int temp = 0;
-    int maxNumber = 0;
+
     for (int i = 0; i < array.GetLength(0); i++)
     {
 
